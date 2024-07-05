@@ -2,6 +2,7 @@ import React from "react";
 import { IoMdContact } from "react-icons/io";
 import { IoMenu } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import Logo from "../../Images/amc_repo.png";
 
 function Header() {
   return (
@@ -13,10 +14,16 @@ function Header() {
         <div className=" self-center ml-10">
           <Link to={"/"}>
             <img
+              src={Logo}
+              alt="logo"
+              style={{ width: "129px", height: "111px" }}
+            />
+
+            {/* <img
               src="../Images/amc_repo.png"
               alt=""
               style={{ width: "129px", height: "111px" }}
-            />
+            /> */}
           </Link>
         </div>
         <div

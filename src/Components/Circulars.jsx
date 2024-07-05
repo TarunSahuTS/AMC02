@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import pdfIcon from "../../Images/pdf.png"; // Ensure the path is correct
+import zipIcon from "../../Images/zip.png"; // Ensure the path is correct
 
 function Circulars() {
   return (
@@ -27,13 +29,14 @@ function Circulars() {
               <h1>Transaction Charges for Tri-party Repo</h1>
             </div>
             <div className="flex justify-center mt-20">
-              <img
+              <img src={pdfIcon} alt="pdfIcon" height={"50px"} width={"50px"} />
+              {/* <img
                 src="../../Images/pdf.png"
                 alt=""
                 height={"50px"}
                 width={"50px"}
                 className="mr-2"
-              />
+              /> */}
               <button className="bg-sky-900 font-bold text-white p-4 text-lg rounded-md">
                 DOWNLOAD
               </button>
@@ -54,13 +57,14 @@ function Circulars() {
               <h1>Transaction Charges for Tri-party Repo</h1>
             </div>
             <div className="flex justify-center mt-20">
-              <img
+              <img src={zipIcon} alt="pdfIcon" height={"50px"} width={"50px"} />
+              {/* <img
                 src="../../Images/zip.png"
                 alt=""
                 height={"50px"}
                 width={"50px"}
                 className="mr-2"
-              />
+              /> */}
               <button className="bg-sky-900 font-bold text-white p-4 text-lg rounded-md">
                 DOWNLOAD
               </button>
@@ -81,13 +85,14 @@ function Circulars() {
               <h1>Transaction Charges for Tri-party Repo</h1>
             </div>
             <div className="flex justify-center mt-20">
-              <img
+              <img src={pdfIcon} alt="pdfIcon" height={"50px"} width={"50px"} />
+              {/* <img
                 src="../../Images/pdf.png"
                 alt=""
                 height={"50px"}
                 width={"50px"}
                 className="mr-2"
-              />
+              /> */}
               <button className="bg-sky-900 font-bold text-white p-4 text-lg rounded-md">
                 DOWNLOAD
               </button>
