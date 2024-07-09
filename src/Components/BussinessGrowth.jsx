@@ -1,26 +1,19 @@
 import React from "react";
-import Table from "./Table";
 import TableHistory from "./TableHistory";
 import TableCurrent from "./TableCurrent";
 
-function BussinessGrowth() {
+function BusinessGrowth() {
   return (
-    <div className="flex justify-center">
-      <div
-        style={{ width: "1758px", height: "521px" }}
-        className="flex flex-col justify-center"
-      >
-        <h1 className="text-2xl font-bold mt-10  mb-3 text-cyan-900 ">
-          Bussiness Growth
+    <div className="flex justify-evenly px-4 md:px-10 lg:px-10 py-4">
+      <div className="w-full max-w-screen-xl flex flex-col justify-center">
+        <h1 className="text-2xl font-bold mt-10 mb-6 text-cyan-900 text-center self-start">
+          Business Growth
         </h1>
 
-        <div className="mx-20  flex justify-between space-x-5">
-          <div className=" ">
-            <h1 className="mb-2">CURRENT</h1>
-            <div
-              className=" border border-blue-100"
-              style={{ width: "798px", height: "319px" }}
-            >
+        <div className="flex flex-col lg:flex-row justify-between space-y-5 lg:space-y-0 lg:space-x-5">
+          <div className="w-full lg:w-1/2">
+            <h1 className="mb-2 text-center lg:text-left">CURRENT</h1>
+            <div className="border border-blue-100 p-4 rounded-lg shadow-sm bg-white">
               <h1 className="ml-2 mt-2">Updated at dd-mm-yy</h1>
               <div className="p-2">
                 <TableCurrent />
@@ -28,10 +21,11 @@ function BussinessGrowth() {
             </div>
           </div>
 
-          <div className="">
-            <h1 className="mb-2">HISTORY-3DAYS</h1>
+          <div className="w-full lg:w-1/2">
+            <h1 className="mb-2 text-center lg:text-left">HISTORY-3DAYS</h1>
             <div
-              style={{ background: "#eef7fa", width: "798px", height: "319px" }}
+              className="p-4 rounded-lg shadow-sm"
+              style={{ background: "#eef7fa" }}
             >
               <div className="p-2">
                 <TableHistory />
@@ -44,4 +38,4 @@ function BussinessGrowth() {
   );
 }
 
-export default BussinessGrowth;
+export default BusinessGrowth;

@@ -1,31 +1,28 @@
 import React from "react";
 import Header from "../Components/Header";
+import BannerImg from "../../Images/banner.png";
 import BussinessGrowth from "../Components/BussinessGrowth";
 import Circulars from "../Components/Circulars";
 import QuickLinks from "../Components/QuickLinks";
-import FooterUpper from "../Components/FooterUpper";
 import FooterLower from "../Components/FooterLower";
-import BannerImg from "../../Images/banner.png";
+import FooterUpper from "../Components/FooterUpper";
 
 function Home() {
   return (
     <>
       <Header />
-      <img
-        src={BannerImg}
-        alt=""
-        style={{ width: "1920px", height: "753px" }}
-      />
-      {/* <img
-        src="../Images/banner.png"
-        style={{ width: "1920px", height: "753px" }}
-        alt=""
-      /> */}
-      <BussinessGrowth />
-      <Circulars />
-      <QuickLinks />
-      <FooterUpper />
-      <FooterLower />
+      <div className="w-full">
+        <img
+          src={BannerImg}
+          alt="Banner"
+          className="w-full h-auto md:h-96 lg:h-[753px] object-cover"
+        />
+        <BussinessGrowth />
+        <Circulars />
+        <QuickLinks />
+        <FooterUpper />
+        <FooterLower />
+      </div>
     </>
   );
 }
